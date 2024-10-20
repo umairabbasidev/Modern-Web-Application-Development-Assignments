@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30%;
+  margin: auto;
+  padding-top: 10%;
+}
+.section1 {
+  border: 1px solid black;
+  width: fit-content;
+}
+
+.redBox {
+  width: 140px;
+  height: 140px;
+  background-color: red;
+  padding-top: 20px;
+}
+.whiteBox {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin: auto;
+  padding-top: 10px;
+}
+.redCirclesMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.redCircles {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.greenBox {
+  background-color: green;
+}
+
+.blueBox {
+  background-color: #add8e6;
+}
+.yellowBox {
+  background-color: yellow;
+}
+.greenCircles {
+  background-color: green;
+}
+.blueCircles {
+  background-color: #add8e6;
+}
+
+.yellowCircles {
+  background-color: yellow;
+}
+
+table {
+  width: 50px;
+  height: 140px;
+}
+td {
+  width: 3px;
+  height: 3px;
+}
