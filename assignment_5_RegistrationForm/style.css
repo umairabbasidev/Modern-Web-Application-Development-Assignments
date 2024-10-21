@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Signika", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 8.5%;
+}
+.formHeader {
+  background-color: #eeeeee;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  box-shadow: 0 0 5px gainsboro;
+}
+
+.formHeaderImage img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.socialAccount img {
+  max-width: 40px;
+  height: auto;
+  margin-left: 15px;
+}
+.formHeaderIconsTextStudentPortal {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.formHeaderStudentPortal {
+  transition: 0.3s;
+}
+.formHeaderStudentPortal:hover {
+  background-color: aliceblue;
+}
+.formHeaderServicesText span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+.formHeaderThreebuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.formHeaderRegistrationText h1 {
+  text-align: center;
+}
+.formHeaderStudentPortal {
+  border: 1px solid lightblue;
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.formHeaderStudentPortal svg {
+  color: rgb(107, 175, 198);
+}
+.formHeaderThreebuttons button {
+  outline: none;
+  border: none;
+  background-color: lightsteelblue;
+  border: 1px solid gray;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.5s;
+  border-radius: 3px;
+}
+
+.formHeaderThreebuttons button:hover {
+  background-color: rgb(166, 202, 215);
+  box-shadow: 0 0 2px gray;
+}
+
+/*  */
+
+.formBody {
+  padding: 0 8.2%;
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: blue;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+select,
+input,
+textarea {
+  width: 440px; /* You can adjust the width as needed */
+  padding: 15px;
+  color: gray;
+  border: 1px solid green;
+  border-radius: 6px;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+}
+
+select option {
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  background-color: #0d6db7;
+  color: white;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0f61a0;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 5px;
+}
+
+.profileText {
+  line-height: 30px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+#uploadPicture {
+  width: 90%;
+  /* border: none; */
+}
+
+input[type="file"] {
+  height: 100px;
+  /* background-color: red; */
+}
+@media only screen and (max-width: 600px) {
+  .formHeader {
+    margin: 0 3.5%;
+  }
+
+  .formHeaderRegistrationText h1 {
+    font-size: 22px;
+    margin: 5px 0;
+  }
+
+  select,
+  input,
+  textarea {
+    width: 330px; /* You can adjust the width as needed */
+  }
+
+  .profile {
+    flex-wrap: wrap;
+    /* width: 330px !important; */
+  }
+}
