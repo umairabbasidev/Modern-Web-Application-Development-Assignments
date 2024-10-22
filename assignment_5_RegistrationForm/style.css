@@ -161,7 +161,6 @@ ol li {
 }
 #uploadPicture {
   max-width: 200px;
-
 }
 
 input[type="file"] {
@@ -181,30 +180,23 @@ input[type="file"] {
   select,
   input,
   textarea {
-    width: 330px;
-    max-width: 100%;
+    width: 300px;
+    /* max-width: 100%; */
   }
 
   .profile {
     flex-wrap: wrap;
-
   }
 
   .formBody {
-  padding: 0;
+    padding: 0;
   }
 
-  .profileText{
-    margin-left: 20px;
- 
- 
-  }
-
-  .uploadPicture{
+  .profile {
     margin-left: 20px;
   }
 
-  .formfooter{
+  .formfooter {
     margin: 10px;
   }
 }
