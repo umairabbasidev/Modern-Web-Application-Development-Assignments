@@ -63,7 +63,7 @@
                 <label for="contry">
                     Select country
                 </label>
-                <select name="country" id="contry">
+                <select name="country" id="contry" required>
                     <option value="">Select Country</option>
                     <option value="pakistan">Pakistan</option>
                     <option value="turkey">Turkey</option>
@@ -74,7 +74,7 @@
                 <label for="city">
                     Select city
                 </label>
-                <select name="city" id="city">
+                <select name="city" id="city" required>
                     <option value=""> Select city</option>
                     <option value="karachi">Karachi</option>
                     <option value="faislabad">Faislabad</option>
@@ -85,7 +85,7 @@
                 <label for="course">
                     Select course
                 </label>
-                <select name="course" id="course">
+                <select name="course" id="course" required>
                     <option value=""> Select course</option>
                     <option value="webAppDev">Web Application Development</option>
                     <option value="mobileAppDev">Mobile Application Development</option>
@@ -101,7 +101,7 @@
                 <label for="computer">
                     Select your computer proficiency
                 </label>
-                <select name="computer" id="computer">
+                <select name="computer" id="computer" required>
                     <option value="">Select your computer proficiency</option>
                     <option value="none">None</option>
                     <option value="beginner">Beginner</option>
@@ -170,12 +170,12 @@
                     Address
                 </label>
                 <div>
-                    <input type="text" name="address" id="address"></input>
+                    <input type="text" name="address" id="address" placeholder="Address" required></input>
                 </div>
             </div>
             <div>
                 <label for="qualification">Last qualification</label>
-                <select name="qualification" id="qualification">
+                <select name="qualification" id="qualification" required>
                     <option value="">Last qualification</option>
                     <option value="matric">Matric</option>
                     <option value="intermediate">Intermediate</option>
@@ -190,17 +190,16 @@
                 <label for="laptop">
                     Do you have laptop?
                 </label>
-                <select name="laptop" id="laptop">
+                <select name="laptop" id="laptop" required>
                     <option value="">Do you have laptop?</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
             </div>
 
-            <div class="profile">
+            <div class="profile ">
 
                 <div id="uploadPicture">
-
                     <label for="uploadPicture">picture</label>
                     <input type="file" name="uploadPicture" id="uploadPicture" value="">
                 </div>
@@ -212,7 +211,7 @@
                         Your Face should be clearly visible without any Glasses</p>
                 </div>
             </div>
-            <div class="formfooter">
+            <div class="formfooter ">
                 <ol>
                     <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to
                         the best of
@@ -236,193 +235,6 @@
     </form>
 
 
-
-
-
-    <!-- <form action="">
-            <div>
-
-                <label for="contry">
-                    Select country
-                </label>
-                <select name="country" id="contry">
-                    <option value="">Select Country</option>
-                    <option value="pakistan">Pakistan</option>
-                    <option value="turkey">Turkey</option>
-                </select>
-            </div>
-
-            <div>
-
-                <label for="city">
-                    Select city
-                </label>
-                <select name="city" id="city">
-                    <option value=""> Select city</option>
-                    <option value="karachi">Karachi</option>
-                    <option value="faislabad">Faislabad</option>
-                    <option value="istanbul">Istanbul</option>
-                </select>
-            </div>
-
-
-
-            <div>
-
-                <label for="course">
-                    Select course
-                </label>
-                <select name="course" id="course">
-                    <option value=""> Select course</option>
-                    <option value="webAppDev">Web Application Development</option>
-                    <option value="mobileAppDev">Mobile Application Development</option>
-                    <option value="dataScience">Data Science</option>
-                    <option value="cloudComputing">Cloud Computing</option>
-                    <option value="cyberSecurity">Cyber Security</option>
-                </select>
-            </div>
-
-
-            <div>
-
-                <label for="computer">
-                    Select course
-                </label>
-                <select name="computer" id="computer">
-                    <option value="">Select your computer proficiency</option>
-                    <option value="none">None</option>
-                    <option value="beginner">Beginner</option>
-                    <option value="intermediate">Intermediate</option>
-                    <option value="advanced">Advanced</option>
-            </div>
-
-
-
-
-            <div>
-
-                <label for="fullName">
-                    Full name
-                </label>
-                <input type="text" name="fullName" id="fullName" value="" required placeholder="Full name">
-            </div>
-
-            <div>
-
-                <label for="fatherName">
-                    Father name
-                </label>
-                <input type="text" name="fatherName" id="fatherName" value="" required placeholder="Father name">
-            </div>
-
-
-            <div>
-
-                <label for="email">
-                    Email
-                </label>
-                <input type="email" name="email" id="email" value="" required placeholder="Email">
-            </div>
-
-            <div>
-                <label for="phoneNo">
-                    Phone
-                </label>
-                <input type="number" name="phoneNo" id="email" value="" required placeholder="Phone">
-            </div>
-            <div>
-                <label for="cnic">
-                    CNIC
-                </label>
-                <input type="number" name="cnic" id="cnic" value="" required placeholder="CNIC">
-            </div>
-            <div>
-                <label for="fatherCNIC">
-                    Father's CNIC (optional)
-                </label>
-                <input type="number" name="fatherCNIC" id="fatherCNIC" value="" required
-                    placeholder="Father's CNIC (optional)">
-            </div>
-
-            <div>
-                <label for="dob">
-                    Date of birth
-                </label>
-                <input type="date" name="dob" id="dob" value="" required </div>
-
-
-                <div>
-                    <label for="address">
-                        Address
-                    </label>
-                    <div>
-                        <textarea name="address" id="address"></textarea>
-                    </div>
-
-                    <div>
-                        <label for="qualification">Last qualification</label>
-                        <select name="qualification" id="qualification">
-                            <option value="">Last qualification</option>
-                            <option value="matric">Matric</option>
-                            <option value="intermediate">Intermediate</option>
-                            <option value="undergraduate">Undergraduate</option>
-                            <option value="graduate">Graduate</option>
-                            <option value="masters">Masters</option>
-                            <option value="phd">PHD</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="laptop">
-                            Do you have laptop?
-                        </label>
-                        <select name="laptop" id="laptop">
-                            <option value="">Do you have laptop?</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-                    </div>
-
-
-
-                    <div>
-                        <div>
-
-                            <label for="uploadPicture">picture</label>
-                            <input type="file" name="uploadPicture" id="uploadPicture" value="">
-                        </div>
-                        <div>
-                            <p>With white or blue background
-                                File size must be less than 1MB
-                                File type: jpg, jpeg, png
-                                Upload your recent passport size picture
-                                Your Face should be clearly visible without any Glasses</p>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-                <div class="formfooter">
-                    <ol>
-                        <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to
-                            the best of
-                            my knowledge. Further, I will abide by all the established and future regulations and
-                            policies of SWIT
-                        </li>
-                        <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be
-                            involved in any
-                            other activity, political or ethical, but learning during my stay in the program.</li>
-                        <li>Defiance will render my admission canceled at any point in time.</li>
-                        <li>Upon completion, of the course, I will complete the required project by SWIT.</li>
-                        <li>It's mandatory for female students to wear abaya/hijab in the class</li>
-                    </ol>
-
-                    <button type="submit">SUBMIT</button>
-                </div>
-
-        </form> -->
 </body>
 
 </html>

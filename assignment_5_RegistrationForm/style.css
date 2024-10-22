@@ -101,7 +101,7 @@ label {
 }
 form {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 15px;
   flex-wrap: wrap;
 }
@@ -110,6 +110,8 @@ select,
 input,
 textarea {
   width: 440px; /* You can adjust the width as needed */
+  max-width: 100%;
+
   padding: 15px;
   color: gray;
   border: 1px solid green;
@@ -141,28 +143,31 @@ button[type="submit"]:hover {
 }
 .profile {
   display: flex;
-  justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
-  gap: 5px;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-right: auto;
 }
 
 .profileText {
-  line-height: 30px;
+  max-width: 200px;
+  width: 100%;
+  font-size: 14px;
+  color: gray;
 }
 
 ol li {
   margin-bottom: 10px;
 }
 #uploadPicture {
-  width: 90%;
-  /* border: none; */
+  max-width: 200px;
+
 }
 
 input[type="file"] {
   height: 100px;
-  /* background-color: red; */
 }
+
 @media only screen and (max-width: 600px) {
   .formHeader {
     margin: 0 3.5%;
@@ -176,11 +181,30 @@ input[type="file"] {
   select,
   input,
   textarea {
-    width: 330px; /* You can adjust the width as needed */
+    width: 330px;
+    max-width: 100%;
   }
 
   .profile {
     flex-wrap: wrap;
-    /* width: 330px !important; */
+
+  }
+
+  .formBody {
+  padding: 0;
+  }
+
+  .profileText{
+    margin-left: 20px;
+ 
+ 
+  }
+
+  .uploadPicture{
+    margin-left: 20px;
+  }
+
+  .formfooter{
+    margin: 10px;
   }
 }
